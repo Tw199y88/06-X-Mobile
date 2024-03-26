@@ -21,19 +21,24 @@ body {
 }
 
 #headerWrapper {
-background: rgb(126,217,87);
-background: linear-gradient(60deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 81%);
+background: white;
   color: $secondaryColor;
 }
 header {
   display: flex;
   align-items: flex-end;
+  justify-content: left;
   padding: 1rem $gutter;
   gap: 8px;
   h1 {
-    margin: 0;
+    margin: auto 0;
+    text-align: left;
     font-size: 1.2rem;
-    font-weight: $normalWeight;
+    font-weight: 800;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
   }
 }
 
@@ -84,12 +89,48 @@ nav {
   }
 }
 
+main img{
+  width: 100%;
+  height: auto;
+}
+
+//styling the rows
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0 8px;
+}
+
+
+//styling the columns
+.column{
+  padding: 0 8px;
+  margin: 8px 0;
+}
+
+// create the for loop
+@for $i from 1 through 12{
+$w: calc($i /12) *100%;
+.small-#{$i} {flex-basis: $w}
+}
+.line, .round, .fill, .shadow{padding: 8px 8px;}
+.line{border:1px #1c2020 solid;}
+.round{border-radius: 9px;}
+.fill{background-color: #ffaeeb;}
+.shadow{box-shadow: 0 0 10px #c0c0c0;}
+.left{justify-content: left;}
+.center{
+  margin: auto;
+  align-items: center;
+}
 
 // begin the footer
 
 #footerWrapper {
-    background: rgb(126,217,87);
-background: linear-gradient(60deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 81%);
+    background-color: black;
+    color:white;
 }
 footer {
     padding: 0.5rem $gutter;

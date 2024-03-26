@@ -19,3 +19,11 @@ ul, ul.open{
 
 
 } //end nav
+
+
+// create the for loop
+@for $i from 1 through 12{
+    $w: calc($i /12) *100%;
+    .large-#{$i} {flex-basis: $w}
+    }
+    
