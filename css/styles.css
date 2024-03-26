@@ -357,7 +357,7 @@ header h1 {
 
 /*Navigation stuff goes here*/
 #navWrapper {
-  background-color: rgb(0, 155, 255);
+  background-color: rgb(0, 132, 255);
 }
 
 nav button {
@@ -385,11 +385,11 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  background-color: #008feb;
+  background-color: #0079eb;
   color: orange;
 }
 nav ul li.active a {
-  background-color: #0082d6;
+  background-color: #006fd6;
 }
 nav ul.open {
   display: block;
